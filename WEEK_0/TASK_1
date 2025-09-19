@@ -1,4 +1,4 @@
-mpleSUMMARY
+SUMMARY
     ->output of GCC = specification in C model.
     ->soft copy of hardware - model the specification in certain language like verilog.
     ->O1 shoul be equal to O2.
