@@ -1,0 +1,30 @@
+O1 – Chip Modelling
+    ->The design starts with specifications written in C model.
+    ->A testbench in C is used to verify the model behavior at a high level before RTL coding.
+O2 – RTL Architecture
+    ->The soft copy of the hardware is created in RTL (Verilog).
+    ->At this stage, the architecture of the processor and peripherals/IPs is defined.
+    ->Output: RTL descriptions that represent the digital system.
+O3 – Gate-Level & Integration
+    ->RTL is synthesized into a Gate-Level Netlist.
+    ->Different components are handled:
+        1.Processor – usually soft logic.
+        2.Peripherals/IPs – functional blocks.
+        3.Macros (Synthesized RTL) and Analog IPs.
+    ->These blocks are brought together in SoC integration, including GPIO connections.
+Physical Design (RTL2GDS Flow)
+    After integration, the chip goes through floorplanning, placement, clock tree synthesis (CTS), and routing
+    Output is GDSII format after performing DRC/LVS checks.
+    Some blocks like macros and analog IPs may be hardened (Hard Macros).
+O4 – Final SoC for Applications
+    ->The final SoC is running at 100–130 MHz and it can be used in real products such as:
+        * iWatch
+        * Arduino boards
+        * TV panels
+        * AC applications
+    ->At this stage, O1 = O2 = O3 = O4, meaning specifications, RTL, integration, and physical design are consistent.
+SUMMARY
+    ->output of GCC = specification in C model
+    ->soft copy of hardware - model the specification in certain language like verilog
+    ->O1 shoul be equal to O2
+    ->soft copy of hardware is divided into processor and peripherals/IPs
