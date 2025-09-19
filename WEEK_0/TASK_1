@@ -27,10 +27,10 @@ STEPS:
         ->After integration, the chip goes through floorplanning, placement, clock tree synthesis (CTS), and routing
         Output is GDSII format after performing DRC/LVS checks.
         Some blocks like macros and analog IPs may be hardened (Hard Macros).
-step 5: O4 – Final SoC for Applications
-    ->The final SoC is running at 100–130 MHz and it can be used in real products such as:
-        * iWatch
-        * Arduino boards
-        * TV panels
-        * AC applications
-    ->At this stage, O1 = O2 = O3 = O4, meaning specifications, RTL, integration, and physical design are perfectly completed.
+    step 5: O4 – Final SoC for Applications
+        ->The final SoC is running at 100–130 MHz and it can be used in real products such as:
+            * iWatch
+            * Arduino boards
+            * TV panels
+            * AC applications
+        ->At this stage, O1 = O2 = O3 = O4, meaning specifications, RTL, integration, and physical design are perfectly completed.
