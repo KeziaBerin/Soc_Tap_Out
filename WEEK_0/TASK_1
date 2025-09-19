@@ -1,12 +1,12 @@
 SUMMARY
-    ->output of GCC = specification in C model
-    ->soft copy of hardware - model the specification in certain language like verilog
-    ->O1 shoul be equal to O2
-    ->soft copy of hardware is divided into processor and peripherals/IPs
-    ->Pherpheral is divided into macros(common source which can be used by anything) and analog IPs(not systhesizable)
-    ->Physical design for a particular chip
-    ->sending GDSII to the factory which is named as Tape Out
-    ->recieving the chip from the factory is Tape In
+    ->output of GCC = specification in C model.
+    ->soft copy of hardware - model the specification in certain language like verilog.
+    ->O1 shoul be equal to O2.
+    ->soft copy of hardware is divided into processor and peripherals/IPs.
+    ->Pherpheral is divided into macros(common source which can be used by anything) and analog IPs.
+    ->Physical design for a particular chip.
+    ->sending GDSII to the factory which is named as Tape Out.
+    ->recieving the chip from the factory is Tape In.
     ->O1=O2=O3=O4
 STEPS:
     step 1: O1 – Chip Modelling
@@ -21,12 +21,12 @@ STEPS:
         ->Different components are handled:
             1.Processor – usually soft logic.
             2.Peripherals/IPs – functional blocks.
-            3.Macros (Synthesized RTL) and Analog IPs.
+            3.Macros and Analog IPs.
         ->These blocks are brought together in SoC integration, including GPIO connections.
-    step 4: Physical Design (RTL2GDS Flow)
-        ->After integration, the chip goes through floorplanning, placement, clock tree synthesis (CTS), and routing
+    step 4: Physical Design
+        ->After integration, the chip goes through floorplanning, placement, clock tree synthesis , and routing
         Output is GDSII format after performing DRC/LVS checks.
-        ->Some blocks like macros and analog IPs may be hardened (Hard Macros).
+        ->Some blocks like macros and analog IPs may be hardened.
     step 5: O4 – Final SoC for Applications
         ->The final SoC is running at 100–130 MHz and it can be used in real products like arduino board.
-        ->At this stage, O1 = O2 = O3 = O4, meaning specifications, RTL, integration, and physical design are perfectly completed.
+Thus getting O1 = O2 = O3 = O4, means specifications, RTL, integration, and physical design are perfectly completed.
