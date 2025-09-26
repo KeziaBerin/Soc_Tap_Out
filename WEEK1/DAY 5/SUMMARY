@@ -1,0 +1,31 @@
+1) IF-CASE Constructs
+   -> "if" and "case" are widely used for decision-making in RTL.  
+   -> Incorrect or incomplete usage can lead to unintended latch inference.  
+   -> Properly coded constructs allow the synthesizer to optimize logic efficiently.  
+
+2) Labs on Incomplete IF
+   -> Demonstrates how missing "else" conditions cause inferred latches.  
+   -> Shows simulation vs synthesis mismatch when signals are not fully assigned.  
+   -> Emphasizes complete coding of conditions for predictable hardware.  
+
+3) Labs on Incomplete/Overlapping CASE
+   -> Incomplete case statements can create unintended latches.  
+   -> Overlapping case items lead to priority logic, which may not be synthesis-optimized.  
+   -> Best practice: use "unique" or "priority" keywords in SystemVerilog or cover all cases.  
+
+4) For Loop and For Generate
+   -> "for" loop: used in testbenches and behavioral code for repeated tasks.  
+   -> "generate for": synthesizable construct to replicate hardware structures.  
+   -> Helps reduce code size and improve readability while synthesizing multiple instances.  
+
+5) Labs on For Loop and For Generate
+   -> Showcases difference between simulation-only "for" and synthesizable "generate for".  
+   -> Examples include building multiplexers, adders, or repeated flip-flops.  
+   -> Reinforces writing loops that map efficiently to hardware.  
+
+6) General Coding Guidelines for Optimization
+   -> Always complete "if" and "case" statements to avoid unintended hardware.  
+   -> Use "generate for" for scalable hardware replication.  
+   -> Avoid overlapping case conditions unless priority logic is required.  
+   -> Prefer structured coding style for better synthesis results.  
+   -> Regularly check synthesized netlists to confirm intended optimizations.  
