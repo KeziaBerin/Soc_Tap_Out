@@ -1,11 +1,9 @@
-# Day 4 – GLS, Blocking vs Non-Blocking, and Synthesis-Simulation Mismatch
-
--> Gate-Level Simulation (GLS)
+1) Gate-Level Simulation (GLS)
    -> Simulates the design at the gate level using synthesized netlists.
    -> Verifies timing and logical correctness after synthesis.
    -> Detects timing violations, glitches, or functional errors not visible in RTL simulation.
 
--> Synthesis-Simulation Mismatch
+2) Synthesis-Simulation Mismatch
    -> Occurs when RTL simulation differs from GLS results.
    -> Common causes:
        -> Incompatible coding styles (blocking vs non-blocking)
@@ -13,25 +11,25 @@
        -> Unsupported constructs in synthesis
    -> Labs focus on detecting and debugging these mismatches.
 
--> Blocking (=) vs Non-Blocking (<=) Statements
+3) Blocking (=) vs Non-Blocking (<=) Statements
    -> Blocking (=): Executes statements sequentially; can cause mismatches in sequential logic.
    -> Non-Blocking (<=): Executes concurrently; recommended for sequential logic to match synthesized behavior.
    -> Labs show how blocking statements can create race conditions or incorrect outputs in GLS.
 
--> Caveats with Blocking Statements
+4) Caveats with Blocking Statements
    -> Using blocking assignments in flip-flop modeling can cause:
        -> Incorrect timing in GLS
        -> Functional mismatches with RTL simulation
        -> Misbehavior in pipelined or sequential designs
    -> Best practice: Use non-blocking for sequential logic and blocking for combinational logic.
 
--> GLS and Synth-Sim Mismatch Labs
+5) GLS and Synth-Sim Mismatch Labs
    -> Compare RTL vs GLS waveforms.
    -> Identify mismatches caused by timing or coding style issues.
    -> Observe the effect of blocking assignments on simulation accuracy.
    -> Reinforces writing synthesis-friendly RTL for correct GLS behavior.
 
--> General Coding Guidelines to Avoid Mismatches
+6) General Coding Guidelines to Avoid Mismatches
    -> Use non-blocking (<=) assignments for sequential logic (flip-flops).
    -> Use blocking (=) assignments only for combinational always blocks.
    -> Initialize signals to avoid inferred latches and mismatches.
