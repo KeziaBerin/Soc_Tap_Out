@@ -31,3 +31,6 @@
     ->Use clock enables and synchronous resets in simulated flops.
     ->Structure sequential logic so retiming and other virtual optimizations can be applied without breaking the model.
     ->Keep combinational logic depth manageable for accurate and fast simulation results.
+
+6. DFF (Flip-Flops) Simulation Focus: Verify edge-triggered behavior, setup timing, enable signals, and reset operations;
+code should use always_ff blocks for clarity and support virtual optimizations.
