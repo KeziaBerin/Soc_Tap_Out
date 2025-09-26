@@ -1,0 +1,16 @@
+1)Introduction to Open-Source Simulator Iverilog
+   >Learned how to write a simple Verilog testbench.
+    ->Explored basic simulation concepts using Iverilog.
+
+2)Labs Using Iverilog and GTKWave
+    ->Hands-on lab sessions to practice writing and simulating Verilog code.
+    ->Lab 1: Introduction to lab environment and simulation workflow.
+    ->Lab 2 (Part 1 & Part 2): Learned to view simulation results using GTKWave.
+
+3)Introduction to Yosys and Logic Synthesis
+    ->Learned about Yosys, an open-source tool for logic synthesis.
+    ->Studied the basics of logic synthesis and its workflow (Part 1 & Part 2).
+
+4)Labs Using Yosys and Sky130 PDKs
+    ->Practiced synthesizing digital designs, specifically a good mux, using Yosys.
+    ->Lab sessions were split into three parts, allowing step-by-step understanding of synthesis and netlist generation.
